@@ -12,9 +12,15 @@ import com.example.moustafashahin.realtime_fb_test.ItemClickListener;
 import com.example.moustafashahin.realtime_fb_test.R;
 import java.util.ArrayList;
 public class Adapter extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView title;
-        TextView body;
-        ItemClickListener itemClickListener;
+    public TextView title, body;
+
+    ItemClickListener itemClickListener;
+
+    public void setItemClickListener(ItemClickListener itemClickListener) {
+        this.itemClickListener = itemClickListener;
+    }
+
+
         public Adapter(View row) {
             super(row);
 
@@ -32,6 +38,7 @@ public class Adapter extends RecyclerView.ViewHolder implements View.OnClickList
     public Adapter(MainActivity mainActivity, ArrayList<Post> ff) {
         f =ff;
     }
+
 
     @NonNull
     @Override

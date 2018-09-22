@@ -10,14 +10,14 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/testtext"
+        android:id="@+id/titletxt"
         android:hint="text"
         android:inputType="text"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/testcontxt"
+        android:id="@+id/contenttxt"
         android:inputType="textImeMultiLine"
         android:hint="context"
         />
